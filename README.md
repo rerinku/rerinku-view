@@ -7,7 +7,7 @@ Low-latency live view, continuous recording and on-device AI detection, all on a
 
 [Website](https://rerinku.com) · [Live demo](https://rerinku.com/live) · [Documentation](https://rerinku.com/docs/overview) · [Releases](https://github.com/rerinku/rerinku-view/releases)
 
-English · [简体中文](README.zh-CN.md)
+English · [简体中文](README.zh-CN.md) · [日本語](README.ja.md)
 
 </div>
 
@@ -116,26 +116,6 @@ See [AI recognition](https://rerinku.com/docs/ai-recognition) and [Events and no
 | **Linux** (x86-64, ARM64) | Available: [Releases](https://github.com/rerinku/rerinku-view/releases/latest) |
 | **macOS, Windows** packages | Not published yet |
 | **Android apps** (Rerinku View, Rerinku Cam) | Not published yet |
-
-### Known limitations
-
-These apply to v0.1.0:
-
-- There are no user accounts in the console, only one optional access password.
-- Docker Desktop on macOS and Windows runs in a virtual machine, so it can't discover cameras automatically or use USB cameras. Add cameras by RTSP address instead.
-- The `arm64` builds have been verified under emulation only. They haven't had a long run on real ARM64 hardware yet.
-
-## Your data
-
-Camera video, recordings, detection results and the face library are stored on the machine running Rerinku View. Only the following leaves it:
-
-| When | Sent to | What |
-| --- | --- | --- |
-| Always, unless you turn it off | Rerinku Cloud | An installation report every 10 minutes: instance ID, version, operating system and a hardware summary. Set `CLOUD_REPORT=false` to turn it off |
-| When a notification is sent | Push relay | Device name, event category (including a person's name if a familiar face was recognized), push token and related IDs. No images |
-| Once Quick Connect is on | Rerinku Cloud gateway | All HTTP content accessed through the Quick Connect address, including pages, API, playback and thumbnails |
-
-See [What data leaves this machine](https://rerinku.com/docs/remote-access#what-data-leaves-this-machine) and the [Privacy Policy](https://rerinku.com/privacy).
 
 ## Help
 

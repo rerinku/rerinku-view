@@ -7,7 +7,7 @@
 
 [官网](https://rerinku.com/zh) · [在线演示](https://rerinku.com/zh/live) · [文档](https://rerinku.com/zh/docs/overview) · [版本发布](https://github.com/rerinku/rerinku-view/releases)
 
-[English](README.md) · 简体中文
+[English](README.md) · 简体中文 · [日本語](README.ja.md)
 
 </div>
 
@@ -116,26 +116,6 @@ docker run -d --name rerinku-view \
 | **Linux**(x86-64、ARM64) | 可用:[版本发布](https://github.com/rerinku/rerinku-view/releases/latest) |
 | **macOS、Windows** 安装包 | 尚未发布 |
 | **安卓 App**(Rerinku View、Rerinku Cam) | 尚未发布 |
-
-### 已知限制
-
-以下限制针对 v0.1.0:
-
-- 控制台没有用户账号体系,只有一个可选的访问密码。
-- macOS 和 Windows 上的 Docker Desktop 运行在虚拟机里,无法自动发现摄像头,也接不了 USB 摄像头。请改用 RTSP 地址手动添加。
-- `arm64` 版本只在模拟环境里验证过,还没有在真实 ARM64 硬件上长时间运行。
-
-## 你的数据
-
-摄像头视频、录像、识别结果和人脸库都存放在运行 Rerinku View 的机器上。只有以下内容会离开这台机器:
-
-| 什么时候 | 发送到 | 内容 |
-| --- | --- | --- |
-| 默认一直发送,可关闭 | Rerinku Cloud | 每 10 分钟一次安装信息上报:实例 ID、版本、操作系统和硬件概况。设置 `CLOUD_REPORT=false` 可关闭 |
-| 发送通知时 | 推送中继 | 设备名、事件类别(认出熟悉面孔时包含此人的名字)、推送令牌和相关 ID,不含图片 |
-| 开启快速连接后 | Rerinku Cloud 网关 | 通过快速连接地址访问的全部 HTTP 内容,包括页面、接口、回放和缩略图 |
-
-详见[哪些数据会离开这台机器](https://rerinku.com/zh/docs/remote-access#哪些数据会离开这台机器)和[隐私政策](https://rerinku.com/zh/privacy)。
 
 ## 帮助
 
