@@ -16,7 +16,7 @@
   <img alt="Rerinku View 实时墙:2×2 分屏同时显示四路摄像头,右侧面板是最近的 AI 识别事件" src="assets/screenshots/zh/live-light.webp">
 </picture>
 
-Rerinku View 把家里、店里或办公室的摄像头接到你自己的电脑、NAS 或迷你主机上。看实时画面和回放都在浏览器里,不用装插件。视频、录像和识别结果都留在这台机器上。
+Rerinku View 是自托管的网络视频录像机(NVR),支持 ONVIF、RTSP 和国标 GB28181 摄像头,把家里、店里或办公室的网络摄像头接到你自己的电脑、NAS 或迷你主机上。看实时画面和回放都在浏览器里,不用装插件。视频、录像和识别结果都留在这台机器上。
 
 FFmpeg、AI 识别组件和远程访问隧道都已内置,不用再装其他东西。
 
@@ -99,15 +99,6 @@ docker run -d --name rerinku-view \
 
 详见 [AI 识别](https://rerinku.com/zh/docs/ai-recognition)和[事件与通知](https://rerinku.com/zh/docs/events)。
 
-### 远程访问与集成
-
-- **快速连接:** 登录 Rerinku Cloud 后,在任何地方都能打开控制台,不用公网 IP 和端口映射。这一项是可选的,其他功能不依赖它。
-- **Home Assistant 和 MQTT:** 详见[集成](https://rerinku.com/zh/docs/integrations)。
-- **开放接口和只读查看令牌:** 用 [Web SDK](https://rerinku.com/zh/docs/web-sdk) 把实时画面嵌进你自己的页面。
-- **控制台:** 支持中文、English、日本語和明暗主题,带全局搜索和操作审计日志。
-
-<sub>截图来自 v0.1.0,画面是 Pexels 的素材视频,并非真实摄像头。</sub>
-
 ## 下载
 
 | 平台 | 状态 |
@@ -120,4 +111,5 @@ docker run -d --name rerinku-view \
 ## 帮助
 
 - [文档](https://rerinku.com/zh/docs/overview)、[常见问题](https://rerinku.com/zh/docs/faq)和[故障排查](https://rerinku.com/zh/docs/troubleshooting)
+- 提问和反馈问题:[GitHub Issues](https://github.com/rerinku/rerinku-view/issues)
 - [联系我们](https://rerinku.com/zh/about)

@@ -16,7 +16,7 @@ English · [简体中文](README.zh-CN.md) · [日本語](README.ja.md)
   <img alt="The Rerinku View live wall showing four cameras in a 2×2 layout, with recent AI detection events in a side panel" src="assets/screenshots/live-light.webp">
 </picture>
 
-Rerinku View connects the cameras in your home, shop or office to a computer, NAS or mini PC of your own. You watch and play back video in a browser, with no plugin to install. Video, recordings and detection results stay on that machine.
+Rerinku View is a self-hosted network video recorder (NVR) for ONVIF, RTSP and GB28181 cameras. It connects the IP cameras in your home, shop or office to a computer, NAS or mini PC of your own. You watch and play back video in a browser, with no plugin to install. Video, recordings and detection results stay on that machine.
 
 FFmpeg, the AI detection components and the remote access tunnel are all built in, so there is nothing else to install.
 
@@ -99,15 +99,6 @@ See [Recording and playback](https://rerinku.com/docs/recording).
 
 See [AI recognition](https://rerinku.com/docs/ai-recognition) and [Events and notifications](https://rerinku.com/docs/events).
 
-### Remote access and integrations
-
-- **Quick Connect:** sign in to Rerinku Cloud to reach your console from anywhere, with no public IP or port forwarding. This is optional, and everything else works without it.
-- **Home Assistant and MQTT:** see [Integrations](https://rerinku.com/docs/integrations).
-- **Open API and read-only view tokens:** embed live video in your own pages with the [Web SDK](https://rerinku.com/docs/web-sdk).
-- **Console:** English, 中文 and 日本語, light and dark themes, global search and an audit log.
-
-<sub>Screenshots are from v0.1.0. Stock footage from Pexels stands in for real cameras.</sub>
-
 ## Downloads
 
 | Platform | Status |
@@ -120,4 +111,5 @@ See [AI recognition](https://rerinku.com/docs/ai-recognition) and [Events and no
 ## Help
 
 - [Documentation](https://rerinku.com/docs/overview), [FAQ](https://rerinku.com/docs/faq) and [Troubleshooting](https://rerinku.com/docs/troubleshooting)
+- Questions and bug reports: [GitHub Issues](https://github.com/rerinku/rerinku-view/issues)
 - [Contact us](https://rerinku.com/about)

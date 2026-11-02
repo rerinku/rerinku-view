@@ -16,7 +16,7 @@
   <img alt="Rerinku View のビデオウォール:2×2 分割で 4 台のカメラを表示し、右側のパネルに最近の AI 認識イベントを表示している画面" src="assets/screenshots/ja/live-light.webp">
 </picture>
 
-Rerinku View は、自宅、お店、オフィスのカメラを、自分のパソコン、NAS、ミニ PC に接続します。ライブ映像も録画の再生もブラウザーで見られ、プラグインは必要ありません。映像、録画、認識結果はそのマシンに保存されます。
+Rerinku View は、ONVIF、RTSP、GB28181 カメラに対応したセルフホスト型のネットワークビデオレコーダー(NVR)です。自宅、お店、オフィスのネットワークカメラを、自分のパソコン、NAS、ミニ PC に接続します。ライブ映像も録画の再生もブラウザーで見られ、プラグインは必要ありません。映像、録画、認識結果はそのマシンに保存されます。
 
 FFmpeg、AI 認識コンポーネント、リモートアクセス用のトンネルはすべて組み込まれており、ほかに何もインストールする必要はありません。
 
@@ -99,15 +99,6 @@ docker run -d --name rerinku-view \
 
 詳しくは [AI 認識](https://rerinku.com/ja/docs/ai-recognition)と[イベントと通知](https://rerinku.com/ja/docs/events)をご覧ください。
 
-### リモートアクセスと連携
-
-- **クイック接続:** Rerinku Cloud にサインインすれば、グローバル IP やポート開放なしで、どこからでもコンソールを開けます。この機能は任意で、ほかの機能はなくても動作します。
-- **Home Assistant と MQTT:** [連携](https://rerinku.com/ja/docs/integrations)をご覧ください。
-- **オープン API と閲覧専用トークン:** [Web SDK](https://rerinku.com/ja/docs/web-sdk) で、ライブ映像を自分のページに埋め込めます。
-- **コンソール:** 日本語、English、中文、ライト/ダークテーマ、全体検索、監査ログ。
-
-<sub>スクリーンショットは v0.1.0 のものです。映像は実際のカメラではなく、Pexels の素材動画です。</sub>
-
 ## ダウンロード
 
 | プラットフォーム | 状況 |
@@ -120,4 +111,5 @@ docker run -d --name rerinku-view \
 ## ヘルプ
 
 - [ドキュメント](https://rerinku.com/ja/docs/overview)、[よくある質問](https://rerinku.com/ja/docs/faq)、[トラブルシューティング](https://rerinku.com/ja/docs/troubleshooting)
+- 質問・不具合の報告:[GitHub Issues](https://github.com/rerinku/rerinku-view/issues)
 - [お問い合わせ](https://rerinku.com/ja/about)
